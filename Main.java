@@ -1,4 +1,5 @@
 import java.util.Scanner;
+//finished hw
 
 public class Main
 {
@@ -42,7 +43,7 @@ public class Main
   {
     for (int i = 0; i < arr.length; i++) {
       int current = arr[i];
-      for (int k = 0; k < arr.length; k++) {
+      for (int k = i; k < arr.length; k++) {
         if (arr[k] == current && k != i) {
           return true;
         }
@@ -54,7 +55,7 @@ public class Main
   public static String findMode(String[] arr)
   {
     int mode = 0;
-    String modeString = "";
+    String modeString = arr[0];
     for (String i : arr) {
       String current = i;
       int currentMode = 0;
